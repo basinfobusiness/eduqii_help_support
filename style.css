@@ -62,3 +62,80 @@
     .hero { background: #3b82f6; color: #fff; padding: 40px 10px 40px 30px; border-radius: 14px; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.16); margin-bottom: 20px;}
     .hero h1 { margin-top: 0; font-size: 2.8rem; line-height: 1.1; color: #fff; }
     .hero p { margin: 20px 0 0; font-size: 1.05rem; max-width: 720px; }
+
+    main ul,
+    main ol {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    main li {
+        margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            gap: 0.75rem 1.25rem;
+        }
+
+        main {
+            margin: 1.5rem auto;
+            padding: 0 1.25rem;
+        }
+
+        h1 {
+            font-size: 2.15rem;
+        }
+
+        .hero {
+            padding: 32px 24px;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        nav {
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.25rem 0.5rem;
+            padding: 0 0.75rem;
+        }
+
+        nav a {
+            display: block;
+            padding: 0.35rem 0.2rem;
+            text-align: center;
+        }
+
+        main {
+            margin: 1.25rem auto;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .hero {
+            padding: 24px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .feature-list li {
+            padding: 16px;
+        }
+    }
